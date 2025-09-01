@@ -54,3 +54,19 @@ button {
 .selected-option {
   background-color: rgb(255, 125, 255);
 }
+
+.win-message {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+
+  font-size: 28px;
+  font-weight: bold;
+}

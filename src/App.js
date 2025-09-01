@@ -62,7 +62,7 @@ function App() {
     false,
   ]);
 
-  const [optionsVisible, setOptionsVisible] = useState(true);
+  const [optionsVisible, setOptionsVisible] = useState(false);
   const [bingoCardChoices, setBingoCardChoices] = useState([]);
   const [newOption, setNewOption] = useState("");
   const [winState, setWinState] = useState(false);
@@ -177,7 +177,13 @@ function App() {
 
   return (
     <div className="App">
-      {winState && <div>You win!</div>}
+      {winState && (
+        <div className="win-message" onClick={() => setWinState(false)}>
+          <span>
+            <p>You win! &times;</p>
+          </span>
+        </div>
+      )}
       <button onClick={() => setOptionsVisible(!optionsVisible)}>
         {!optionsVisible && "Show"}
         {optionsVisible && "Hide"} all current options
