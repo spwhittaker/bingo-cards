@@ -1,0 +1,56 @@
+.App {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 15cm;
+  max-width: 20cm;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: rgb(0, 0, 0);
+}
+
+.bingo-card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
+  grid-template-rows: repeat(5, 1fr); /* Creates 5 equal rows */
+  column-gap: 0;
+  width: 100%; /* Container width */
+  height: 100%; /* Container height */
+}
+.option-box {
+  background-color: #ccc; /* Background color of each square */
+  border: 1px solid #999; /* Border around each square */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers any content inside */
+  width: 8vw; /* Container width */
+  height: 8vw;
+  padding: 3px;
+  font-size: 10px;
+  margin: 0;
+}
+.options-box {
+  max-height: 30vh;
+  overflow: auto;
+  width: 100%;
+  border: black solid 1px;
+}
+
+.option-text {
+  text-align: center;
+}
+
+.card-container {
+  margin: 15px;
+}
+button {
+  margin: 5px;
+}
+
+.selected-option {
+  background-color: rgb(255, 125, 255);
+}
